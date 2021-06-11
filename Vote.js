@@ -9,7 +9,8 @@ class App extends React.Component {
         { id: "1", name: "youtube", like: 0, dislike:0, url: 'https://www.youtube.com/' },
         { id: "2", name: "google", like: 0, dislike: 0, url: 'https://www.google.com/' }
       ],
-      website: ''
+      website: '',
+      newIndex: 0
     }
   }
 
@@ -36,12 +37,16 @@ class App extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    console.log(e.target.value);
-    console.log(this.state.website);
+
     const newUrl = this.state.website;
+
     let newName = this.state.website;
     newName = newName.split('.')[0].replace('https://','');
-    this.setState({ data: this.state.data.concat({id: "3", name: newName, like: 0, dislike: 0, url: newUrl}) });
+
+    let newId = (this.state.newIndex.length-1) + 1;
+    newId = '' + newId;
+    
+    this.setState({ data: this.state.data.concat({id: newId, name: newName, like: 0, dislike: 0, url: newUrl}) });
   };
 
   
