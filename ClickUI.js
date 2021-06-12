@@ -48,17 +48,6 @@ function List(props) {
   );
 }
 
-const ShowDetail = (props) => {
-  console.log(props);
-  return <div>
-    <h1>{props.id}</h1>
-    <h1>{props.login}</h1>
-    <h1>Hello</h1>
-  </div>
-}
-
-
-
 class App extends Component {
   constructor(props) {
     super(props);
