@@ -1,0 +1,31 @@
+.modal-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 9999;
+}
+
+.modal-container {
+  border: 1px solid black;
+  margin: 50px auto;
+  position: relative;
+  padding: 15px 25px;
+  background-color: white;
+  min-height: 200px;
+}
+
+.cross-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
