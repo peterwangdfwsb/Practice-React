@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  border-bottom: 2px solid blue;
+  padding-bottom: 5px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.tag {
+  margin: 0 5px;
+  background-color: darkgray;
+  border-radius: 25px;
+  padding: 2px 8px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  margin-left: 8px;
+}
